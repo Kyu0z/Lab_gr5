@@ -52,20 +52,17 @@ namespace Lab2_2
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnOut);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtDate);
-            this.groupBox1.Controls.Add(this.btDelete);
-            this.groupBox1.Controls.Add(this.btThemsua);
             this.groupBox1.Controls.Add(this.cmbCN);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.txtMSV);
-            this.groupBox1.Location = new System.Drawing.Point(65, 31);
+            this.groupBox1.Location = new System.Drawing.Point(698, 103);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(895, 253);
+            this.groupBox1.Size = new System.Drawing.Size(440, 253);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Chi Tiết";
@@ -73,7 +70,7 @@ namespace Lab2_2
             // 
             // btnOut
             // 
-            this.btnOut.Location = new System.Drawing.Point(574, 195);
+            this.btnOut.Location = new System.Drawing.Point(727, 452);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(94, 29);
             this.btnOut.TabIndex = 9;
@@ -84,7 +81,7 @@ namespace Lab2_2
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 117);
+            this.label1.Location = new System.Drawing.Point(44, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 20);
             this.label1.TabIndex = 8;
@@ -92,18 +89,18 @@ namespace Lab2_2
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(181, 114);
+            this.txtDate.Location = new System.Drawing.Point(181, 100);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(125, 27);
             this.txtDate.TabIndex = 7;
             // 
             // btDelete
             // 
-            this.btDelete.Location = new System.Drawing.Point(386, 195);
+            this.btDelete.Location = new System.Drawing.Point(539, 452);
             this.btDelete.Name = "btDelete";
             this.btDelete.Size = new System.Drawing.Size(116, 29);
             this.btDelete.TabIndex = 6;
-            this.btDelete.Text = "Xóa Sinh Viên";
+            this.btDelete.Text = "Xóa";
             this.btDelete.UseVisualStyleBackColor = true;
             this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
@@ -111,7 +108,7 @@ namespace Lab2_2
             // 
             this.btThemsua.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btThemsua.ForeColor = System.Drawing.Color.OliveDrab;
-            this.btThemsua.Location = new System.Drawing.Point(212, 195);
+            this.btThemsua.Location = new System.Drawing.Point(365, 452);
             this.btThemsua.Name = "btThemsua";
             this.btThemsua.Size = new System.Drawing.Size(94, 29);
             this.btThemsua.TabIndex = 5;
@@ -123,12 +120,11 @@ namespace Lab2_2
             // 
             this.cmbCN.FormattingEnabled = true;
             this.cmbCN.Items.AddRange(new object[] {
-            "Công Nghê Thông Tin",
-            "Ngôn Ngữ Anh",
-            "Quản Trị Kinh Doanh",
-            "Marketing",
-            "Quản trị du lịch và lữ hành"});
-            this.cmbCN.Location = new System.Drawing.Point(619, 117);
+            "Kế toán",
+            "Kiểm thử",
+            "IT",
+            "Marketing"});
+            this.cmbCN.Location = new System.Drawing.Point(181, 201);
             this.cmbCN.Name = "cmbCN";
             this.cmbCN.Size = new System.Drawing.Size(174, 28);
             this.cmbCN.TabIndex = 4;
@@ -136,7 +132,7 @@ namespace Lab2_2
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(482, 46);
+            this.label3.Location = new System.Drawing.Point(44, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 1;
@@ -145,25 +141,25 @@ namespace Lab2_2
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(481, 117);
+            this.label6.Location = new System.Drawing.Point(43, 201);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 20);
+            this.label6.Size = new System.Drawing.Size(80, 20);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Lớp học";
+            this.label6.Text = "Phòng ban";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(44, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 20);
+            this.label2.Size = new System.Drawing.Size(123, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Mã Số Sinh Viên";
+            this.label2.Text = "Mã Số Nhân Viên";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(619, 43);
+            this.txtName.Location = new System.Drawing.Point(181, 149);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(174, 27);
             this.txtName.TabIndex = 0;
@@ -184,11 +180,11 @@ namespace Lab2_2
             this.dgvMSV,
             this.Column3,
             this.Date});
-            this.dgvStudent.Location = new System.Drawing.Point(65, 307);
+            this.dgvStudent.Location = new System.Drawing.Point(63, 103);
             this.dgvStudent.Name = "dgvStudent";
             this.dgvStudent.RowHeadersWidth = 51;
             this.dgvStudent.RowTemplate.Height = 29;
-            this.dgvStudent.Size = new System.Drawing.Size(895, 252);
+            this.dgvStudent.Size = new System.Drawing.Size(556, 278);
             this.dgvStudent.TabIndex = 3;
             this.dgvStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudent_CellClick);
             this.dgvStudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -203,7 +199,7 @@ namespace Lab2_2
             // 
             // dgvMSV
             // 
-            this.dgvMSV.HeaderText = "MSSV";
+            this.dgvMSV.HeaderText = "MNV";
             this.dgvMSV.MinimumWidth = 6;
             this.dgvMSV.Name = "dgvMSV";
             this.dgvMSV.ReadOnly = true;
@@ -211,7 +207,7 @@ namespace Lab2_2
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Lớp học";
+            this.Column3.HeaderText = "Phòng ban";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.Width = 125;
@@ -228,10 +224,13 @@ namespace Lab2_2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 588);
+            this.Controls.Add(this.btnOut);
             this.Controls.Add(this.dgvStudent);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btThemsua);
+            this.Controls.Add(this.btDelete);
             this.Name = "Form1";
-            this.Text = "Quản Lý Thông Tin Sinh Viên";
+            this.Text = "Quản Lý Thông Tin Nhân Viên";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
